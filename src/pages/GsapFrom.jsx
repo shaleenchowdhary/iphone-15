@@ -1,0 +1,22 @@
+import gsap from 'gsap';
+import { useEffect } from 'react';
+
+const GsapFrom = () => {
+  useEffect(() => {
+    gsap.to('#blue-box', {
+      x: 250,
+      repeat: -1,
+      yoyo: true,
+      rotation: 360,
+      duration: 2,
+      ease: 'power1.inOut',
+    });
+  }, []);
+
+  return (
+    <div>
+      <div id="blue-box" className="h-20 w-20 rounded-md bg-green-500"></div>
+    </div>
+  );
+};
+export default GsapFrom;
