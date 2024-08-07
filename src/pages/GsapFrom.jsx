@@ -1,8 +1,8 @@
+import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useEffect } from 'react';
 
 const GsapFrom = () => {
-  useEffect(() => {
+  useGSAP(() => {
     gsap.to('#blue-box', {
       x: 250,
       repeat: -1,

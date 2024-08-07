@@ -1,6 +1,7 @@
 import './App.css';
 import GsapFrom from './pages/GsapFrom';
 import GsapFromTo from './pages/GsapFromTo';
+import GsapTimeline from './pages/GsapTimeline';
 import GsapTo from './pages/GsapTo';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <GsapTo /> */}
       {/* <GsapFrom /> */}
-      <GsapFromTo />
+      {/* <GsapFromTo /> */}
+      <GsapTimeline />
     </>
   );
 }

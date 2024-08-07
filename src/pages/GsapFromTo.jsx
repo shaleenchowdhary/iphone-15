@@ -1,10 +1,10 @@
+import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useEffect } from 'react';
 
 const GsapFromTo = () => {
-  useEffect(() => {
+  useGSAP(() => {
     gsap.fromTo(
-      '#blue-box',
+      '#box',
       {
         x: 0,
         rotation: 0,
@@ -24,7 +24,7 @@ const GsapFromTo = () => {
 
   return (
     <div>
-      <div id="blue-box" className="h-20 w-20 rounded-md bg-red-500"></div>
+      <div id="box" className="h-20 w-20 rounded-md bg-red-500"></div>
     </div>
   );
 };
